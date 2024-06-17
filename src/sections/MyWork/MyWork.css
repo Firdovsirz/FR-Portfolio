@@ -1,0 +1,100 @@
+.my-work-section {
+    padding: 100px 300px;
+}
+
+.my-work-section>.my-work-heading {
+    font-size: 60px;
+    font-weight: 300;
+    color: #303030;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.my-work-section>.my-work-heading>span {
+    font-weight: 700;
+}
+
+.work-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.work-cards>.work-card {
+    border: 1px solid black;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #606060;
+    transition: all 600ms ease;
+    cursor: pointer;
+    width: 380px;
+}
+
+.work-cards>.work-card:hover {
+    scale: 1.1;
+}
+
+.work-cards>.work-card:last-child:hover {
+    border-color: #eb5424;
+    box-shadow: #eb5424 0px 18px 50px -10px;
+}
+
+.work-cards>.work-card:nth-child(2):hover {
+    border-color: #30ADBD;
+    box-shadow: #30ADBD 0px 18px 50px -10px;
+}
+
+.work-cards>.work-card:first-child:hover {
+    box-shadow: #07373f 0px 18px 50px -10px;
+}
+
+.work-cards>.work-card>.work-card-title {
+    font-size: 30px;
+    color: #eb5424;
+    font-weight: 500;
+    margin: 20px 0 10px 0;
+}
+
+.work-cards>.work-card>.work-card-desc {
+    text-align: center;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #606060;
+    margin-top: 10px;
+}
+
+.work-cards>.work-card>.work-card-line {
+    height: 1px;
+    width: 120px;
+    background: #dfdfdf;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1700px){
+    .my-work-section>.my-work-heading{
+        text-align: center;
+        margin-left: 0;
+    }
+    .work-cards{
+        justify-content: center;
+    }
+    .work-cards>.work-card{
+        margin: 20px;
+    }
+}
+
+@media (max-width: 1000px){
+    .my-work-section{
+        padding: 100px;
+    }
+    .my-work-section>.my-work-heading{
+        font-size: 30px;
+    }
+    .work-cards>.work-card{
+        width: 320px;
+    }
+}

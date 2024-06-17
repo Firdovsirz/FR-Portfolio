@@ -1,0 +1,81 @@
+.my-portfolio-section {
+    background: #f8f8f8;
+    padding: 80px;
+}
+
+.port-heading {
+    color: #303030;
+    font-weight: 300;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.port-heading>span {
+    font-style: bold;
+    font-weight: 600;
+}
+
+.port-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 150px;
+}
+
+.port-main>a>img {
+    margin-right: 50px;
+    width: 400px;
+}
+
+.port-main>p>a {
+    text-decoration: none;
+    color: #303030;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.port-main>p>a>span {
+    font-weight: 500;
+}
+
+@media (max-width: 1000px){
+    .my-portfolio-section>.port-main{
+        flex-direction: column;
+        padding: 0;
+    }
+    .my-portfolio-section>.port-main>a{
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .my-portfolio-section>.port-main>a>img{
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .my-portfolio-section{
+        padding: 50px 10px 10px 10px;
+    }
+    .my-portfolio-section>.port-heading{
+        font-size: 30px;
+    }
+    .my-portfolio-section>.port-main>a{
+        justify-content: center;
+        align-items: center;
+    }
+    .my-portfolio-section>.port-main>a>img{
+        width: 95%;
+    }
+    .my-portfolio-section>.port-main{
+        justify-content: center;
+    }
+    .my-portfolio-section>p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

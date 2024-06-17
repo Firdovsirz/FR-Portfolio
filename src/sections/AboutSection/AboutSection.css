@@ -1,0 +1,126 @@
+.about-section {
+    background-image: url("../../assets/about-bg.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-section>.about-text-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+}
+
+.about-text {
+    width: 500px;
+    margin-right: 400px;
+    margin-bottom: 100px;
+}
+
+.about-text>.about-head-me-txt {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.about-text>.about-head-me-txt>.about-me-txt {
+    font-weight: 500;
+}
+
+.about-text>.about-head-job-txt {
+    font-weight: 300;
+    color: #eb5424;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.about-text>.about-head-job-txt>.about-job {
+    font-weight: 300;
+}
+
+.about-text>.about-head-job-txt>.about-job {
+    font-weight: 500;
+}
+
+.about-text>p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 3cap;
+    letter-spacing: 0.1cap;
+}
+
+.about-social-medias {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.about-social-medias>.linkedIn {
+    background: #0a66c2;
+    width: calc(100vw / 3);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.about-social-medias>.linkedIn>a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.about-social-medias>.github {
+    width: calc(100vw / 3);
+    background: black;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.about-social-medias>.github>a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.about-social-medias>.telegram {
+    width: calc(100vw / 3);
+    background: #24A1DE;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.about-social-medias>.telegram>a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media (max-width: 1000px){
+    .about-section{
+        padding-inline: 50px;
+        background-position: center;
+        background-size: contain;
+    }
+    .about-social-medias{
+        display: none;
+    }
+    .about-section>.about-text-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .about-section>.about-text-container>.about-text{
+        margin: 0 auto;
+    }
+}

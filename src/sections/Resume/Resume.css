@@ -1,0 +1,126 @@
+.resume-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 150px 300px;
+}
+
+.resume-section>.my-profile>h2 {
+    font-weight: 300;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.resume-section>.my-profile>ul>li {
+    font-size: 16px;
+    font-weight: 300;
+    margin-block: 20px;
+    list-style-type: none;
+}
+
+.resume-section>.my-profile>ul>li:nth-child(5)>a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #eb5424;
+}
+
+.resume-section>.my-profile>ul>li:last-child>a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #eb5424;
+}
+
+.resume-section>.my-profile>ul>li>span {
+    color: #5a5252;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.resume-section>.my-profile>h2>span {
+    font-weight: 500;
+}
+
+.resume-section>.some-skills {
+    width: 500px;
+}
+
+.resume-section>.some-skills>h2 {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.resume-section>.some-skills>h2>span {
+    font-weight: 500;
+}
+
+.skill-main {
+    width: 500px;
+}
+
+.skill-main>div {
+    margin-block: 20px;
+}
+
+.skill-main>div>.skill-desc {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1700px) {
+    .resume-section {
+        padding: 150px 100px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .resume-section {
+        padding: 100px;
+        flex-direction: column;
+    }
+
+    .resume-section>.my-profile {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .resume-section {
+        padding: 80px 20px;
+        flex-direction: column;
+    }
+
+    .resume-section>.my-profile {
+        margin-bottom: 50px;
+        width: 80%;
+    }
+
+    .resume-section>.my-profile>h2 {
+        font-size: 35px;
+    }
+
+    .resume-section>.my-profile>ul>li {
+        font-size: 20px;
+    }
+
+    .skill-main {
+        width: 100%;
+    }
+
+    .resume-section>.some-skills {
+        width: 300px;
+    }
+
+    .resume-section>.some-skills>h2 {
+        font-size: 35px;
+    }
+
+    .resume-section>.some-skills>p {
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .skill-main>div {
+        width: 80%;
+    }
+}

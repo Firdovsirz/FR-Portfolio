@@ -1,0 +1,75 @@
+.home-section {
+    /* background-image: url(""); */
+    background:
+        linear-gradient(to bottom, rgba(145, 137, 137, 0.5), transparent),
+        /* Gradient overlay */
+        url('../../assets/home-bg.jpg');
+        background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-section>.home-name {
+    font-size: 60px;
+    font-weight: 700;
+    color: #5f5f5f;
+}
+
+.home-section>.home-job-title {
+    font-size: 30px;
+    color: #eb5424;
+    margin-block: 15px;
+}
+
+.home-section>.home-job-desc {
+    width: 600px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.home-section>.home-job-desc>span {
+    color: #5f5f5f;
+    font-weight: 700;
+}
+
+.home-section>a>.home-btn {
+    background: #eb5424;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+    padding: 15px 50px;
+    transition: all 400ms ease-in;
+    cursor: pointer;
+}
+.home-section>a>.home-btn{
+    text-decoration: none;
+    color: #fff;
+}
+.home-section>a>.home-btn:hover  {
+    color: #eb5424;
+    background: #fff;
+}
+
+@media (max-width: 700px){
+    .home-section>.home-name{
+        font-size: 40px;
+    }
+    .home-section>.home-job-title{
+        font-size: 25px;
+    }
+    .home-section>.home-job-desc{
+        width: 70%;
+        font-size: 20px;
+    }
+}
