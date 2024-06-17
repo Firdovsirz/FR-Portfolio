@@ -9,33 +9,33 @@ import AboutSection from './sections/AboutSection/AboutSection'
 import ContactSection from './sections/ContactSection/ContactSection'
 
 function App() {
-  // useEffect(() => {
-  //   const smoothScroll = () => {
-  //     const links = document.querySelectorAll('nav a');
-  //     links.forEach(link => {
-  //       link.addEventListener('click', function (e) {
-  //         e.preventDefault();
+  useEffect(() => {
+    const smoothScroll = () => {
+      const links = document.querySelectorAll('nav a');
+      links.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
 
-  //         const targetId = this.getAttribute('href').substring(1);
-  //         const targetElement = document.getElementById(targetId);
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
 
-  //         if (targetElement) {
-  //           targetElement.scrollIntoView({
-  //             behavior: 'smooth'
-  //           });
-  //         }
-  //       });
-  //     });
-  //   };
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    };
 
-  //   smoothScroll();
-  //   return () => {
-  //     const links = document.querySelectorAll('nav a');
-  //     links.forEach(link => {
-  //       link.removeEventListener('click', smoothScroll);
-  //     });
-  //   };
-  // }, []);
+    smoothScroll();
+    return () => {
+      const links = document.querySelectorAll('nav a');
+      links.forEach(link => {
+        link.removeEventListener('click', smoothScroll);
+      });
+    };
+  }, []);
 
   return (
     <>
