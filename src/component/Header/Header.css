@@ -41,18 +41,17 @@ header>.navbar>.navbar-menu>ul>li>a {
     font-weight: 500;
     letter-spacing: 0.1cap;
     transition: all 400ms;
-    color: #fff;
+    color: black;
 }
 
+header>.scrolled>div>ul>li>a {
+    cursor: pointer;
+}
 header>.scrolled {
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
 }
 
-header>.scrolled>div>ul>li>a {
-    cursor: pointer;
-    color: black;
-}
 
 header>.navbar>div>ul>li>a:hover {
     color: #eb5424;
