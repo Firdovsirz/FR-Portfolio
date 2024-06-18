@@ -57,7 +57,7 @@ export default function Resume() {
                         <li><span>Phone</span> +994554511870</li>
                         <li><span>Email</span> firdovsirz@gmail.com</li>
                         <li><span>GitHub</span><a href="https://github.com/Firdovsirz">Firdovsirz</a></li>
-                        <li><span>Website</span> <a href="#">www.FR.vercel.app</a></li>
+                        <li><span>Website</span> <a href="https://fr-1shajma1h-firdovsirzs-projects.vercel.app/">FR</a></li>
                     </ul>
                 </div>
                 <div className='some-skills'>
